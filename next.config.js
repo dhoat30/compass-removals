@@ -1,6 +1,6 @@
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 
     (process.env.NODE_ENV === "production" ? "https://quote.boxandgomovers.co.nz" : "http://localhost:3000");
-    const siteName = "Box and Go Movers"
+    const siteName = "Compass Removals - Adelaide's Trusted Moving Company | Local & Interstate Relocation Services"
 
 // bundle analyzer 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
