@@ -1,0 +1,54 @@
+.section {
+    padding: 140px 0 80px 0;
+  
+    @media(max-width: 1100px) {
+        padding: 88px 0 40px 0;
+    }
+    .contentWrapper {
+       .titleUSP{ 
+        background: var(--light-surface-container-lowest); 
+        max-width: fit-content;
+        padding: 12px 24px; 
+        box-shadow: 0 0 7.1px 0 rgba(90, 158, 246, 0.4);
+        border: 1px solid var(--light-primary-container); 
+border-radius: 50px;
+margin: 0 auto; 
+       }
+
+        .reviewWrapper { 
+            .trustSnippetWrapper{ 
+                background: var(--light-surface-container-lowest);
+                border: 1px solid var(--light-outline-variant);
+  border-radius: 50px;
+  max-width: fit-content;
+ 
+  padding: 8px 16px; 
+            }
+        }
+        .formWrapper {
+            max-width: 300px;
+            margin: 0 auto;
+            border-radius: 8px;
+
+            .inputWrapper {
+                @media(max-width: 520px) {
+                    flex-wrap: wrap;
+                }
+
+                .input {
+                    cursor: pointer;
+                    border: 1px solid var(--light-primary);
+                    width: 100%;
+                    border-radius: 50px;
+                    padding: 12px;
+
+                    .icon {
+                        color: var(--light-primary);
+                    }
+
+                }
+            }
+        }
+   
+    }
+}

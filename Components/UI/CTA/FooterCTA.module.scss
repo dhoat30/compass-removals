@@ -1,0 +1,22 @@
+.section{ 
+  padding: 40px 0;
+  @media (max-width: 900px) {
+    padding: 24px 0;
+  }
+  .wrapper{ 
+    padding: 120px 0;
+    background: linear-gradient(90deg, #1a498a 0%, #532b98 100%);
+
+
+        border-radius: 32px;
+        @media (max-width: 900px) {
+          padding: 56px 16px;
+        }
+
+        .contentWrapper{ 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    
+  }
+}

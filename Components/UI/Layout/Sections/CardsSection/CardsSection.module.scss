@@ -1,0 +1,76 @@
+// styles/ServicesSection.module.scss
+
+.section {
+    padding: 80px 0;
+
+    @media (max-width: 600px) {
+      padding: 24px 0;
+      min-height: auto;
+
+    }
+  
+    .container {
+      .titleWrapper {
+        // max-width: 800px;
+        grid-template-columns: 450px 700px;
+        @media(max-width: 1250px){ 
+          grid-template-columns: 350px 1fr;
+        }
+        @media(max-width: 800px){ 
+          grid-template-columns: 1fr;
+          gap: 0; 
+        }
+      }
+  
+     
+    }
+    .cardsWrapper {
+      .section-cta {
+        button {
+          width: 100%;
+          background: var(--dark-primary);
+          color: var(--dark-on-primary);
+          padding: 12px 0;
+          border-radius: 50px;
+          font-size: 1.1rem;
+        }
+      }
+
+      .card {
+      
+
+
+        .imageWrapper {
+          border-radius: 16px; 
+          .image{ 
+            
+          }
+        }
+
+        .contentWrapper {
+          padding: 8px 16px; 
+    
+          .subtitle {
+            margin: 0 0 8px 0;
+          }
+
+          .title {
+          
+          
+          }
+          .description{ 
+            p { 
+              font-weight: 400 !important; 
+
+            }
+          }
+
+          .cta {
+            margin-top: 16px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,141 @@
+.section {
+    padding: 80px 0 40px 0;
+  
+    @media(max-width: 1100px) {
+        padding: 88px 0 40px 0;
+    }
+
+    .container {}
+
+    .graphicWrapper {
+        margin-top: 64px;
+
+        @media(max-width: 900px) {
+            margin-top: 32px;
+        }
+
+        .newGraphicType {
+            position: relative;
+
+            .graphic {
+                position: relative;
+
+                .imageWraper1 {
+                    padding-bottom: 150%;
+
+                    @media(max-width: 550px) {
+                        padding-bottom: 100%;
+                    }
+                }
+
+                .imageWraper2 {
+                    padding-bottom: 120%;
+
+                    @media(max-width: 550px) {
+                        display: none;
+                    }
+                }
+
+                .token1,
+                .token2 {
+                    border-radius: 50%;
+                    position: absolute;
+                    right: -24px;
+                    top: -48px;
+                    width: 152px;
+                    height: 152px;
+
+                    @media(max-width: 600px) {
+                        right: -16px;
+
+                    }
+
+                    .tokenContent {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: calc(100% - 48px);
+
+                    }
+                }
+
+                .token1 {
+
+                    .subtitle,
+                    .title,
+                    .description {
+                        color: var(--light-tertiary);
+                    }
+
+                    background: var(--dark-tertiary);
+
+                    &::after {
+                        content: url('data:image/svg+xml,<svg width="137" height="139" viewBox="0 0 137 139" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M133.556 82.4053C127.596 112.854 100.767 135.829 68.5728 135.829C36.3783 135.829 9.54986 112.854 3.58912 82.4053H0.53418C6.53608 114.521 34.7157 138.829 68.5728 138.829C102.43 138.829 130.609 114.521 136.611 82.4053H133.556ZM3.58912 56.8159C9.54986 26.367 36.3783 3.39185 68.5728 3.39185C100.767 3.39185 127.596 26.367 133.556 56.8159H136.611C130.609 24.7 102.43 0.391846 68.5728 0.391846C34.7157 0.391846 6.53608 24.7 0.53418 56.8159H3.58912Z" fill="%23835500"/></svg>');
+
+                        position: absolute;
+                        top: calc(50% + 2px);
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .token2 {
+
+                    .subtitle,
+                    .title,
+                    .description {
+                        color: var(--light-secondary);
+                    }
+
+                    background: var(--dark-secondary);
+
+                    @media(max-width: 550px) {
+                        display: none;
+                    }
+
+                    &::after {
+                        content: url('data:image/svg+xml,<svg width="137" height="139" viewBox="0 0 137 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M133.556 82.7979C127.596 113.247 100.767 136.222 68.5728 136.222C36.3783 136.222 9.54986 113.247 3.58912 82.7979H0.53418C6.53608 114.914 34.7157 139.222 68.5728 139.222C102.43 139.222 130.609 114.914 136.611 82.7979H133.556ZM3.58912 57.2085C9.54986 26.7596 36.3783 3.78442 68.5728 3.78442C100.767 3.78442 127.596 26.7596 133.556 57.2085H136.611C130.609 25.0925 102.43 0.784424 68.5728 0.784424C34.7157 0.784424 6.53608 25.0925 0.53418 57.2085H3.58912Z" fill="%233c5661"/></svg>');
+                        position: absolute;
+                        top: calc(50% + 2px);
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .contentWrapper {
+       
+        .title,
+        .description {
+           
+        }
+
+        .formWrapper {
+            max-width: 300px;
+            margin: 0 auto;
+            border-radius: 8px;
+
+            .inputWrapper {
+                @media(max-width: 520px) {
+                    flex-wrap: wrap;
+                }
+
+                .input {
+                    cursor: pointer;
+                    border: 1px solid var(--light-primary);
+                    width: 100%;
+                    border-radius: 50px;
+                    padding: 12px;
+
+                    .icon {
+                        color: var(--light-primary);
+                    }
+
+                }
+            }
+        }
+    }
+}

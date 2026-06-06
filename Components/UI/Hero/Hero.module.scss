@@ -1,0 +1,11 @@
+.titleWrapper{ 
+    text-align: center;
+    background: var(--light-surface-container-low);
+    border-bottom: 1px solid var(--light-outline-variant);
+    padding-top: 40px;
+    padding-bottom: 24px;
+    @media (max-width: 900px) {
+      padding-top: 72px;
+    }
+ 
+}

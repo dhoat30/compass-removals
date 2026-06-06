@@ -1,0 +1,39 @@
+.section{ 
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--dark-surface, #131316);
+  z-index: 1101;
+
+  @media (max-width: 720px) {
+    .ctaLink {
+      display: none;
+    }
+  }
+
+  .wrapper {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1150px) {
+      .tabsWrapper {
+        width: 60%;
+      }
+    }
+    @media (max-width: 720px) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      .tabsWrapper {
+        width: 100%;
+      }
+    }
+
+    .ctaLink {
+      width: 222px;
+    }
+  }
+ 
+}

@@ -1,0 +1,104 @@
+// styles/ServicesSection.module.scss
+
+.section {
+    padding: 80px 0;
+    background: var(--light-surface-container-lowest);
+
+
+    @media (max-width: 600px) {
+      padding: 40px 0;
+    }
+  
+    .container {
+      .titleWrapper {
+        max-width: 900px;
+        margin: 0 auto;
+       
+      }
+  
+      .cardsWrapper {
+        // margin-top: 40px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 32px;
+      
+  
+        // @media (max-width: 900px) {
+        //   margin-top: 24px;
+        //   flex-direction: column-reverse;
+        // }
+  
+        // > div {
+        //   width: calc(25% - 40px);
+  
+        //   @media (max-width: 1200px) {
+        //     width: calc(33% - 40px);
+        //   }
+  
+        //   @media (max-width: 900px) {
+        //     width: 100%;
+        //   }
+        // }
+  
+        .section-cta {
+          button {
+            width: 100%;
+            background: var(--dark-primary);
+            color: var(--dark-on-primary);
+            padding: 12px 0;
+            border-radius: 50px;
+            font-size: 1.1rem;
+          }
+        }
+  
+        .card {
+          position: relative; 
+       
+          display: block;
+            background-color: var(--light-surface-container-low);
+           
+          .imageWrapper {
+            .image{ 
+                border-top-right-radius: 12px;
+                border-top-left-radius: 12px;
+            }
+          }
+  
+          .contentWrapper {
+            position: absolute; 
+            top: 50%;
+            left: 16px; 
+            transform: translate(0, -50%); 
+            display: flex;
+            flex-direction: column;
+            gap: 4px; 
+            align-items: flex-start;
+            .subtitle {
+              margin: 0 0 8px 0;
+            }
+  
+            .title {
+              background: var(--light-tertiary-container);
+              color: var(--light-on-tertiary-container);  
+              display: inline-block;
+              padding: 4px 8px; 
+
+            }
+        .price{ 
+          background: var(--light-tertiary-container);
+          color: var(--light-on-tertiary-container);
+          display: inline-block;
+           padding: 4px 8px; 
+           font-weight:700;
+
+        }
+            .cta {
+              margin-top: 16px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  

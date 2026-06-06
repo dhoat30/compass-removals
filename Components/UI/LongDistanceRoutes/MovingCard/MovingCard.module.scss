@@ -1,0 +1,42 @@
+.cardHoverDisabled{ 
+       &:hover { 
+        box-shadow: none !important; 
+        cursor: default !important;
+    }
+}
+.card{ 
+    padding: 16px 24px;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    
+    &:hover { 
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        border: 1px solid var(--light-outline);
+    }
+    .arrowIcon{ 
+        transform: rotate(180deg);
+        height: 24px; 
+        
+    }
+    .chipsWrapper{ 
+        .statusChip{ 
+              background: var(--light-primary-container);
+            color: var(--light-on-primary-container);
+                padding: 4px 16px;
+                    border-radius: 50px;
+        }
+        .spareCapacityChip{ 
+                background: var(--light-primary-container);
+            color: var(--light-on-primary-container);
+             padding: 4px 16px;
+                             border-radius: 50px;
+
+        }           
+
+    }
+    .attributesWrapper{ 
+        @media(max-width: 600px){ 
+            gap: 8px;
+        }
+    }
+}

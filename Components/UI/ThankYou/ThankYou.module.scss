@@ -1,0 +1,15 @@
+.section{ 
+    background: var(--light-surface-container-low);
+    min-height: 80vh;
+    .container {
+      background: var(--light-surface-container-lowest);
+      padding: 24px;
+      .imageContainer {
+        max-width: 400px;
+        margin: 0 auto;
+      
+      }
+    }
+   
+  
+}

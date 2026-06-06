@@ -1,0 +1,14 @@
+.MovingCard{ 
+    padding: 16px 16px;
+    min-height: 200px; 
+    @media(max-width: 600px){ 
+            min-height: 270px; 
+
+    }
+}
+
+.movingMap{ 
+    padding: 0; 
+    height:500px; 
+    overflow: hidden;
+}

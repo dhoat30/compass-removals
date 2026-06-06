@@ -1,0 +1,53 @@
+{
+  "name": "treeScene2024",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sync:reviews": "node scripts/sync-google-reviews.mjs"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^5.16.12",
+    "@mui/lab": "^5.0.0-alpha.175",
+    "@mui/material": "^5.16.12",
+    "@mui/x-date-pickers": "^7.29.4",
+    "apify-client": "^2.12.0",
+    "axios": "^1.5.0",
+    "dayjs": "^1.11.20",
+    "embla-carousel-auto-scroll": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "eslint": "8.48.0",
+    "eslint-config-next": "15.1.2",
+    "framer-motion": "^12.4.3",
+    "jquery": "^3.7.1",
+    "js-cookie": "^3.0.5",
+    "leaflet": "^1.9.4",
+    "next": "15.5.9",
+    "next-sitemap": "^4.2.2",
+    "react": "^19.1.1",
+    "react-compare-slider": "^3.1.0",
+    "react-dom": "^19.1.1",
+    "react-player": "^2.16.0",
+    "react-slick": "^0.30.3",
+    "sass": "^1.99.0",
+    "sharp": "^0.32.6",
+    "slick-carousel": "^1.8.1",
+    "treeScene2024": "file:"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^15.1.2",
+    "autoprefixer": "^10.4.15",
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0",
+    "postcss": "^8.4.29"
+  },
+  "engines": {
+    "node": "24.x",
+    "npm": "9.6.7"
+  }
+}

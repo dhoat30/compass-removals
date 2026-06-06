@@ -1,0 +1,52 @@
+.calculatorWrapper{ 
+    background: var(--light-surface-container-lowest);
+    padding: 24px 40px; 
+    @media(max-width: 600px){ 
+        padding: 16px; 
+    }
+    .inputWrapper{ 
+        .inputLabel{ 
+
+        }
+   
+        .formControl{ 
+             min-width: 220px; 
+
+             @media(max-width: 450px){ 
+                min-width: 100px; 
+                width: 140px; 
+            }
+             .select{ 
+
+                // background: var(--dark-on-primary);
+             }
+             .menuItem{ 
+                // background: var(--dark-on-primary);
+             }
+        }
+    }
+    .iconWrapper{ 
+        width: 100%; 
+        max-width: 500px;
+        .icon{ 
+            path{ 
+                stroke: var(--light-on-surface-variant) !important;
+            }
+        }
+        .active{ 
+            path{ 
+                stroke:var(--light-primary) !important; 
+            }
+        }
+    }
+    .labelWrapper{ 
+        .calculatedValueLabel{ 
+            color: var(--light-on-surface);
+        }
+        .calculatedValue{ 
+            color: var(--light-primary);
+        }
+    }
+ 
+    
+}

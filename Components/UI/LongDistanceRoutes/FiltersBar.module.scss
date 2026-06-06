@@ -1,0 +1,7 @@
+.mobileFilterBar{ 
+ @media(max-width: 600px){ 
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 24px !important; 
+ }   
+}

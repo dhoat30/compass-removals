@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+
+  .videoWrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 12px;
+    // overflow: hidden;
+    // border: 1px solid var(--light-outline-variant);
+
+    .backgroundGradient {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+height: 120%; 
+      border-radius: 244px; 
+      /* Gradient fill */
+      background: radial-gradient(
+        circle at center,
+        rgb(152, 252, 255) 0%,
+        rgb(139, 255, 178) 100%
+      );
+      /* Blur to get the glow effect */
+      filter: blur(100px);
+      /* Optional extras */
+      opacity: 1;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+
+  .videoOverlay {
+    background: rgba(31, 100, 135, 0.233);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    border-radius: 12px;
+
+  }
+
+  .buttonStyled {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    svg {
+      &:hover {
+        cursor: pointer;
+      }
+
+      width: 72px;
+      height: 72px;
+      cursor: pointer;
+
+    }
+  }
+
+}

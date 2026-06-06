@@ -1,0 +1,33 @@
+.section{ 
+    min-height: 90vh;
+    padding: 120px 0;
+  background-color: var(--light-surface-container-low);
+    @media (max-width: 900px) {
+      padding: 40px 0;
+    }
+.cardsWrapper{ 
+    @media(max-width: 800px){ 
+            gap: 16px;     
+            }
+    .card{ 
+        flex: 0 0 calc(25% - 32px); /* Slide covers 50% of the viewport */
+        padding: 16px;
+        border-radius: 8px !important;
+        border: 1px solid var(--light-outline-variant);
+        @media(max-width: 1200px){ 
+            flex: 0 0 calc(33% - 32px); /* Slide covers 50% of the viewport */
+
+        }
+        @media(max-width: 800px){ 
+            flex: 0 0 calc(50% - 16px); /* Slide covers 50% of the viewport */
+        }
+        @media(max-width: 500px){ 
+            flex: 0 0 100%; /* Slide covers 50% of the viewport */
+        }
+        .title{ 
+            color: var(--light-primary);
+        }
+    }
+}
+
+}

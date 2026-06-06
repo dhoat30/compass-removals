@@ -1,0 +1,25 @@
+.section{ 
+    padding: 120px 0 40px 0;
+    background-color: var(--light-surface-container-lowest);
+    @media(max-width: 1020px){ 
+            padding: 80px 0 40px 0;
+
+    }
+    .titleFilterWrapper{ 
+        grid-template-columns: 1fr auto;
+        justify-content: space-between;
+        @media(max-width: 900px){ 
+            grid-template-columns: 1fr ;
+          
+        }
+    }
+    .movingCardsWrapper{ 
+        grid-template-columns: 1fr 1fr 1fr;
+        @media(max-width : 1050px){ 
+            grid-template-columns: 1fr 1fr ;
+        }
+         @media(max-width : 650px){ 
+            grid-template-columns: 1fr  ;
+        }
+    }
+}

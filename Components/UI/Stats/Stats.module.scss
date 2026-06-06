@@ -1,0 +1,17 @@
+.section{ 
+    padding: 40px 0;
+    background: var(--light-primary-container); 
+    @media(max-width: 600px){ 
+        padding: 24px 0 ;
+    }
+    .container { 
+        @media(max-width: 600px ){ 
+            justify-content: center;
+        }
+       .statWrapper{ 
+        .value, .label{ 
+            color: white; 
+        }
+       }
+    }
+}

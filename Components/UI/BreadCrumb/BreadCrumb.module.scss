@@ -1,0 +1,11 @@
+.nav{ 
+  font-family: var(--font-work-sans), Segoe UI, sans-serif;
+  letter-spacing: -0.03rem;
+  font-size: 1rem; 
+    .anchor {
+        color: var(--light-secondary);
+        .linkText {
+          text-decoration: underline;
+        }
+      }
+}
