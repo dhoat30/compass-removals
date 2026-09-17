@@ -1,3 +1,4 @@
+import perthLocations from "@/data/perth-locations.json";
 import RowSection from "./Sections/RowSection/RowSection";
 import ServicesSection from "./Sections/ServicesSection/ServicesSection";
 import FaqAccordionSection from "./Sections/FaqAccordionSection/FaqAccordionSection";
@@ -222,14 +223,12 @@ if (section.acf_fc_layout === "landing_page_hero_section") {
       return <Stats key={index} statsData={statsData} />;
     }
     if (section.acf_fc_layout === "show_locations" && section.show_locations) {
-      if (!locationsCovered) return null;
       return (
         <LocationsCovered
           key={index}
-          title={locationsCovered.title}
-          description={locationsCovered.description}
-          locations={locationsCovered.locations}
-          image={locationsCovered.image}
+          title={perthLocations.title}
+          description={perthLocations.description}
+          locations={perthLocations.locations}
         />
       );
     }
@@ -237,10 +236,9 @@ if (section.acf_fc_layout === "landing_page_hero_section") {
       return (
         <LocationsCovered
           key={index}
-          title={section.title}
-          description={section.description}
-          locations={section.locations}
-          image={section.image}
+          title={perthLocations.title}
+          description={perthLocations.description}
+          locations={perthLocations.locations}
         />
       );
     }

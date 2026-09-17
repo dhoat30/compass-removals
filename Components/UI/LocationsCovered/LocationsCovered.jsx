@@ -5,40 +5,16 @@ import styles from "./LocationsCovered.module.scss";
 import Container from "@mui/material/Container";
 import { Chip, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import perthLocations from "@/data/perth-locations.json";
 
-const DEFAULT_CENTER = [-34.9285, 138.6007];
+const DEFAULT_CENTER = perthLocations.center;
 const DEFAULT_ZOOM = 10;
 const MAP_TILE_URL =
-  "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+  "/api/map-tiles/{z}/{x}/{y}{r}";
 
-const LOCATION_COORDINATES = {
-  "Adelaide CBD": [-34.9285, 138.6007],
-  "North Adelaide": [-34.9078, 138.5947],
-  Norwood: [-34.9211, 138.6366],
-  Burnside: [-34.9395, 138.6601],
-  Campbelltown: [-34.8839, 138.6631],
-  Prospect: [-34.8846, 138.5933],
-  "Mawson Lakes": [-34.8159, 138.6195],
-  Salisbury: [-34.7677, 138.6086],
-  Elizabeth: [-34.7194, 138.6771],
-  "Golden Grove": [-34.7906, 138.6949],
-  "Henley Beach": [-34.9203, 138.4943],
-  Glenelg: [-34.9803, 138.5169],
-  Brighton: [-35.0183, 138.5236],
-  "West Lakes": [-34.8727, 138.4905],
-  Unley: [-34.9506, 138.6077],
-  Mitcham: [-34.978, 138.6218],
-  Blackwood: [-35.0217, 138.6142],
-  "Morphett Vale": [-35.1217, 138.5233],
-  Seaford: [-35.1891, 138.4765],
-  "Port Adelaide": [-34.846, 138.503],
-  Stirling: [-35.0067, 138.7177],
-  Hahndorf: [-35.0288, 138.8118],
-  "Mount Barker": [-35.0644, 138.8587],
-  Gawler: [-34.5986, 138.749],
-  Tanunda: [-34.5232, 138.9595],
-  "McLaren Vale": [-35.2188, 138.5433],
-};
+const LOCATION_COORDINATES = Object.fromEntries(
+  perthLocations.locations.map(({ label, coordinates }) => [label, coordinates])
+);
 
 function getLocationLabel(location) {
   if (typeof location === "string") return location;
@@ -47,6 +23,7 @@ function getLocationLabel(location) {
 
 function getNumericCoordinate(...values) {
   for (const value of values) {
+    if (value == null || value === "") continue;
     const number = Number(value);
     if (Number.isFinite(number)) return number;
   }
@@ -127,6 +104,7 @@ export default function LocationsCovered({
     let map;
 
     async function initMap() {
+      setMapError("");
       try {
         const leaflet = await import("leaflet");
         if (cancelled || !mapRef.current) return;
@@ -144,6 +122,9 @@ export default function LocationsCovered({
             attribution:
               '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
             maxZoom: 19,
+          })
+          .on("tileerror", () => {
+            if (!cancelled) setMapError("Map tiles could not be loaded. Please try again later.");
           })
           .addTo(map);
 

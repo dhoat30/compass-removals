@@ -1,0 +1,192 @@
+{
+  "title": "Areas We Cover Across Perth",
+  "description": "Moving across Perth? We help with home and office moves throughout the metro area, including the suburbs below. Contact us to discuss your pickup and delivery locations.",
+  "center": [
+    -31.9523,
+    115.8613
+  ],
+  "locations": [
+    {
+      "label": "Perth CBD",
+      "coordinates": [
+        -31.9523,
+        115.8613
+      ]
+    },
+    {
+      "label": "North Perth",
+      "coordinates": [
+        -31.927,
+        115.852
+      ]
+    },
+    {
+      "label": "Leederville",
+      "coordinates": [
+        -31.938,
+        115.841
+      ]
+    },
+    {
+      "label": "Mount Lawley",
+      "coordinates": [
+        -31.934,
+        115.872
+      ]
+    },
+    {
+      "label": "Subiaco",
+      "coordinates": [
+        -31.949,
+        115.826
+      ]
+    },
+    {
+      "label": "Nedlands",
+      "coordinates": [
+        -31.981,
+        115.807
+      ]
+    },
+    {
+      "label": "Claremont",
+      "coordinates": [
+        -31.982,
+        115.782
+      ]
+    },
+    {
+      "label": "Cottesloe",
+      "coordinates": [
+        -31.995,
+        115.759
+      ]
+    },
+    {
+      "label": "Scarborough",
+      "coordinates": [
+        -31.895,
+        115.758
+      ]
+    },
+    {
+      "label": "Innaloo",
+      "coordinates": [
+        -31.892,
+        115.795
+      ]
+    },
+    {
+      "label": "Stirling",
+      "coordinates": [
+        -31.883,
+        115.81
+      ]
+    },
+    {
+      "label": "Dianella",
+      "coordinates": [
+        -31.888,
+        115.872
+      ]
+    },
+    {
+      "label": "Morley",
+      "coordinates": [
+        -31.895,
+        115.905
+      ]
+    },
+    {
+      "label": "Bayswater",
+      "coordinates": [
+        -31.918,
+        115.913
+      ]
+    },
+    {
+      "label": "Midland",
+      "coordinates": [
+        -31.89,
+        116.005
+      ]
+    },
+    {
+      "label": "Joondalup",
+      "coordinates": [
+        -31.745,
+        115.766
+      ]
+    },
+    {
+      "label": "Wanneroo",
+      "coordinates": [
+        -31.75,
+        115.806
+      ]
+    },
+    {
+      "label": "Hillarys",
+      "coordinates": [
+        -31.807,
+        115.741
+      ]
+    },
+    {
+      "label": "Fremantle",
+      "coordinates": [
+        -32.056,
+        115.748
+      ]
+    },
+    {
+      "label": "South Perth",
+      "coordinates": [
+        -31.989,
+        115.864
+      ]
+    },
+    {
+      "label": "Victoria Park",
+      "coordinates": [
+        -31.977,
+        115.896
+      ]
+    },
+    {
+      "label": "Belmont",
+      "coordinates": [
+        -31.949,
+        115.927
+      ]
+    },
+    {
+      "label": "Cannington",
+      "coordinates": [
+        -32.016,
+        115.936
+      ]
+    },
+    {
+      "label": "Canning Vale",
+      "coordinates": [
+        -32.058,
+        115.919
+      ]
+    },
+    {
+      "label": "Cockburn Central",
+      "coordinates": [
+        -32.122,
+        115.848
+      ]
+    },
+    {
+      "label": "Armadale",
+      "coordinates": [
+        -32.153,
+        116.015
+      ]
+    }
+  ]
+}
